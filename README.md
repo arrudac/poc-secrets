@@ -5,8 +5,12 @@
 GHTOKEN | Sem Permissão Explicita no Repo  <br>
 TESTE | Permissão Explicita no Repo <br>
 TESTE2 | Sem Permissão Explicita no Repo  <br>
+GHTOKEN | Sem Permissão Explicita no Repo  <br>
+TESTE | Permissão Explicita no Repo <br>
+TESTE2 | Sem Permissão Explicita no Repo  <br>
 <!-- ORG:END -->
 
 # Secrets de Repositório
 <!-- REPO:START -->
+REPOSECRET  <br>
 <!-- REPO:END -->
