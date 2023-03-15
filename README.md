@@ -9,10 +9,13 @@ TESTE2 | Sem Permissão Explicita no Repo  <br>
 
 # Variaveis de Organização Disponiveis
 <!-- ORGVAR:START -->
+VARTESTE | Sem Permissão Explicita no Repo  <br>
+VARTESTE2 | Sem Permissão Explicita no Repo  <br>
 <!-- ORGVAR:END -->
 
 # Secrets de Repositório
 <!-- REPO:START -->
+REPOSECRET  <br>
 <!-- REPO:END -->
 
 # Variaveis de Repositório
@@ -21,12 +24,22 @@ TESTE2 | Sem Permissão Explicita no Repo  <br>
 
 # Secrets por Ambiente
 <!-- ENV:START -->
+TESTE | dev <br>
+TESTE1 | hml <br>
+TESTE | hml <br>
+BLUABLAISDAS | hml <br>
+TESTE | prd <br>
+DASDASDAS | prd <br>
 <!-- ENV:END -->
 
 # Variaveis por Ambiente
 <!-- ENVVAR:START -->
+POC | dev <br>
 <!-- ENVVAR:END -->
 
 |Chave|Tipo|Permissão| Ambiente|
 |--|--|--|--|
+| GHTOKEN | ![org](https://img.shields.io/badge/-secret-orange) | ![org](https://img.shields.io/badge/-ORG-blue) | ![org](https://img.shields.io/badge/-ORG-green) |
+| TESTE | ![org](https://img.shields.io/badge/-secret-orange) | ![org](https://img.shields.io/badge/explicito-REPO-blue) | ![org](https://img.shields.io/badge/-ORG-green) |
+| TESTE2 | ![org](https://img.shields.io/badge/-secret-orange) | ![org](https://img.shields.io/badge/-ORG-blue) | ![org](https://img.shields.io/badge/-ORG-green) |
 <!-- TABELA:END-->
