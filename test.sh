@@ -53,8 +53,8 @@ do
     nome_env=$(echo $env_name | jq .[$i].name | sed 's/"//g')
     linha=$(cat README.md | grep -n "ENV:END" | cut -d: -f1)
     
-    count_secret_by_env=$(curl -L -H "Accept: application/vnd.github+json" -H "Authorization: Bearer $GH_TOKEN" -H "X-GitHub-Api-Version: 2022-11-28" https://api.github.com/repositories/$repo_id/environments/$nome_env/secrets | jq .total_count)
-    list_secret_env=$(curl -L -H "Accept: application/vnd.github+json" -H "Authorization: Bearer $GH_TOKEN" -H "X-GitHub-Api-Version: 2022-11-28" https://api.github.com/repositories/$repo_id/environments/$nome_env/secrets | jq .secrets)
+    count_secret_by_env=$(curl -L -H "Accept: application/vnd.github+json" -H "Authorization: Bearer $GH_TOKEN" -H "X-GitHub-Api-Version: 2022-11-28" https://api.github.com/repositories/$repo_id/environments/$nome_env/variables | jq .total_count)
+    list_secret_env=$(curl -L -H "Accept: application/vnd.github+json" -H "Authorization: Bearer $GH_TOKEN" -H "X-GitHub-Api-Version: 2022-11-28" https://api.github.com/repositories/$repo_id/environments/$nome_env/variables | jq .variables)
     final_count_secret_by_env=$(($count_secret_by_env - 1))
     for j in $(seq 0 $final_count_secret_by_env)
     do
