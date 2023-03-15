@@ -10,7 +10,7 @@ do
     #echo $secrets | jq .[$i].name
     linha=$(cat README.md | grep -n "ORG:END" | cut -d: -f1)
     valor=$(echo $secrets | jq .[$i].name | sed 's/"//g')
-    sed -i "${linha}i $valor" README.md
+    sed -i "${linha}i $valor <br>" README.md
 done
 
 # obtendo as variaveis de repositórios
